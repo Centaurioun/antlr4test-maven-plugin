@@ -38,7 +38,7 @@
 	</organization>
 	<properties>
 		<maven.version>3.6.2</maven.version>
-		<antlr.version>4.10.1</antlr.version>
+		<antlr.version>4.11.1</antlr.version>
 		<org.easymock.version>4.3</org.easymock.version>
 		<target.jvm>11</target.jvm>
 	</properties>
@@ -187,10 +187,10 @@
 							<target>
 								<delete includeEmptyDirs="true">
 									<fileset dir="${project.build.outputDirectory}">
-										<include name="tnt*" />
-										<include name="Case*" />
+										<include name="tnt*"/>
+										<include name="Case*"/>
 									</fileset>
-									<fileset dir="${project.build.outputDirectory}/dummy" />
+									<fileset dir="${project.build.outputDirectory}/dummy"/>
 								</delete>
 							</target>
 						</configuration>
@@ -205,7 +205,7 @@
 							<target>
 								<copy todir="${project.build.directory}/generated-sources/antlr4/dummy">
 									<fileset dir="src/test/resources/dummy/">
-										<include name="*.java" />
+										<include name="*.java"/>
 									</fileset>
 								</copy>
 							</target>
@@ -251,7 +251,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore />
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
